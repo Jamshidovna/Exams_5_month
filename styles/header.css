@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url(../font/Rubik-Regular.ttf);
+}
+.content {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.dark__mode {
+  display: flex;
+  font-family: "Rubik";
+  font-weight: 200;
+  align-items: center;
+  -moz-column-gap: 5px;
+  column-gap: 5px;
+}
+
+nav {
+  padding: 10px 0px 15px 0px;
+  background-color: var(--card-color);
+  transition: 0.4s;
+  width: 100%;
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-filter {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-filter .click select {
+  width: 180px;
+  border: none;
+  outline: none;
+  padding: 17.5px;
+  background-color: var(--card-color);
+  transition: 0.4s;
+  padding-right: 15px;
+  color: var(--dark);
+  border-radius: 5px;
+  font-size: 15px;
+  box-shadow: 0px 4px 10px -6px rgba(0, 0, 0, 0.1);
+}
+.nav-filter .search {
+  position: relative;
+  margin-bottom: 40px;
+}
+.nav-filter .search svg {
+  top: 18px;
+  position: absolute;
+  width: 20px;
+  color: var(--dark);
+  left: 13px;
+  height: 20px;
+}
+.nav-filter .search input {
+  box-shadow: 0px 4px 10px -6px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 5px;
+  padding: 15px 0;
+  color: var(--dark);
+  font-size: 20px;
+  text-indent: 40px;
+  background-color: var(--card-color);
+  transition: 0.4s;
+}
+.nav-filter .search input::-moz-placeholder {
+  font-size: 15px;
+  color: var(--grey);
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+}
+.nav-filter .search input::placeholder {
+  font-size: 15px;
+  color: var(--grey);
+  transition: 0.4s;
+}
+.nav-filter .search input:focus {
+  outline: none;
+}
+
+@media (max-width: 576px) {
+  .nav-filter {
+    flex-direction: column;
+  }
+  .search {
+    width: 100%;
+  }
+  .search input {
+    width: 100%;
+  }
+  select {
+    margin-bottom: 20px;
+  }
+  .card_image {
+    width: 350px;
+  }
+  .card h2 {
+    padding: 30px 0px 20px 0px;
+    padding-left: 12px;
+  }
+  .card h4 {
+    padding: 20px 0px;
+    padding-left: 12px;
+  }
+  .card p {
+    padding-bottom: 40px;
+  }
+  .dark__mode h3 {
+    font-size: 15px;
+  }
+  .nav h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 372px) {
+  .card img {
+    width: 320px;
+  }
+}/*# sourceMappingURL=header.css.map */
